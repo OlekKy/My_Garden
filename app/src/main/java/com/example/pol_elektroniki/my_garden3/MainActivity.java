@@ -27,28 +27,6 @@ public class MainActivity extends AppCompatActivity {
         final Button btn_sell = (Button) findViewById(R.id.btn_sell);
 
 
-        btn_storage = (Button) findViewById(R.id.btn_storage);
-        btn_storage.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, StorageActivity.class));
-            }
-        });
-        btn_buy = (Button) findViewById(R.id.btn_buy);
-        btn_buy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, BuyActivity.class));
-            }
-        });
-
-        btn_sell.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this, SellActivity.class));
-            }
-        });
-
         Intent intent = getIntent();
         String username = intent.getStringExtra("username");
 

@@ -59,7 +59,7 @@ public class LoginActivity extends AppCompatActivity {
                                 Globals.id = jsonResponse.getInt("id");
                                 Globals.gold = jsonResponse.getInt("gold");
                                 Globals.request();
-                                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
+                                Intent intent = new Intent(LoginActivity.this, SlidingActivity.class);
                                 intent.putExtra("username", username);
                                 LoginActivity.this.startActivity(intent);
 
