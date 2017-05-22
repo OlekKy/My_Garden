@@ -4,15 +4,14 @@
 
     <uses-permission android:name="android.permission.INTERNET" />
 
-
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
-        android:label="@string/app_name"
+        android:label="SlidingActivity"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".LoginActivity">
+        <activity android:name=".SlidingActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -28,7 +27,11 @@
         <activity android:name=".BuyActivity" />
         <activity android:name=".Signup" />
         <activity android:name=".RegisterActivity" />
-        <activity android:name=".SellActivity"></activity>
+        <activity android:name=".SellActivity" />
+        <activity
+            android:name=".LoginActivity"
+            android:label="My_Garden3"
+            android:theme="@style/AppTheme"></activity>
     </application>
 
 </manifest>
