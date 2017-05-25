@@ -24,7 +24,7 @@ import com.example.pol_elektroniki.my_garden3.fragment.TechnologyFragment;
 public class MyAdapter extends FragmentPagerAdapter {
     private Context mContext;
     private String[] titles ={"A","B","C","D"};
-    int[] icon = new int[]{R.drawable.magnifier, R.drawable.magnifier,R.drawable.magnifier,R.drawable.magnifier};
+    int[] icon = new int[]{R.drawable.home, R.drawable.budynki,R.drawable.flota,R.drawable.technologia};
     private int heightIcon;
 
     public MyAdapter(FragmentManager fm, Context c){

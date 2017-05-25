@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginBottom="3dp"
+        android:layout_marginRight="10dp">
+
+    <ImageView
+        android:id="@+id/tower"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:background="@drawable/tower"/>
+    <TextView
+        android:id="@+id/opis"
+        android:text="To jest budynek"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/tower"/>
+
+    <TextView
+        android:id="@+id/description"
+        android:text="Description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_below="@id/opis"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/tower"/>
+    </RelativeLayout>
+</FrameLayout>
